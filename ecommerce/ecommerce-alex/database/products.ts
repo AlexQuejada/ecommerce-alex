@@ -23,7 +23,7 @@ export const initialData: SeedData = {
     {
       description:
         'La camiseta tradicional de toda la vida Corte recto, clásico y holgado Tejido grueso de 180 g/m² de gramaje, colores lisos en algodón sanforizado. El color gris jaspeado es 90 % algodón y 10 % poliéster; el denim jaspeado es 50 % poliéster. Cuello y dobladillos con doble puntada para una mayor durabilidad La imprenta independiente que imprime este producto ha sido evaluada de acuerdo con los estándares de la Organización Internacional del Trabajo.La imprenta independiente que imprime este producto obtiene sus materiales de fabricantes comprometidos con la mejora de las prácticas de cultivo de algodón.',
-      images: ['Android_M1_B.jpg', 'Android_M1_N.jpg'],
+      images: ['BlackDress.jpeg', 'BlackDress.jpeg'],
       inStock: 7,
       price: 69000,
       sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
