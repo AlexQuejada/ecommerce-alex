@@ -4,13 +4,13 @@ export interface IProduct {
     images: string[];
     inStock: number;
     price: number;
-    sizes: ISizes[];
+    sizes: ISize[];
     slug: string;
     tags: string[];
     title: string;
-    type: ITypes;
+    type: IType;
     gender: 'hombre' | 'mujer' | 'unisex';
   }
   
-  export type ISizes = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | '3XL';
-  export type ITypes = 'camisetas' | 'buzos' | 'gorras';
+  export type ISize = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | '3XL';
+  export type IType = 'camisetas' | 'buzos' | 'gorras';

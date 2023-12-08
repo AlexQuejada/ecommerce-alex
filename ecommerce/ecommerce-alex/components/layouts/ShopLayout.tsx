@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import { Margin } from '@mui/icons-material';
 import { Navbar } from '../ui';
 interface props{
   title: string
@@ -11,7 +10,7 @@ interface props{
 export const ShopLayout: FC<props> = ({children, title, pageDescription, imagenFullUrl }) =>{
   return (
     <>
-      <head>
+      <Head>
         <title>{title}</title>
         <meta name='description' content={pageDescription} />
         <meta name='og:title' content={title} />
@@ -23,7 +22,7 @@ export const ShopLayout: FC<props> = ({children, title, pageDescription, imagenF
             <meta name='og:title' content={imagenFullUrl} />
           )
         }
-      </head>
+      </Head>
       <nav>
         <Navbar />
       </nav>
