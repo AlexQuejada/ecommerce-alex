@@ -1,13 +1,14 @@
-import React, { FC } from 'react';
+import React, { ReactNode } from 'react';
 import Head from 'next/head';
 import { Navbar } from '../ui';
 interface props{
   title: string
   pageDescription: string
   imagenFullUrl?: string 
+  children: ReactNode;
 }
 
-export const ShopLayout: FC<props> = ({children, title, pageDescription, imagenFullUrl }) =>{
+export const ShopLayout: React.FC<props> = ({ children,title, pageDescription, imagenFullUrl }) =>{
   return (
     <>
       <Head>
