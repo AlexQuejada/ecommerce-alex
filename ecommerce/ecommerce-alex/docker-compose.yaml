@@ -1,0 +1,8 @@
+services:
+  ecommercedb:
+    image: mongo
+    container_name: ecommerce-database
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo:/data/db

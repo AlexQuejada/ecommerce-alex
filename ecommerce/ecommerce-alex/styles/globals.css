@@ -9,13 +9,6 @@
   100% {opacity: 1;}
 }
 
-@font-face {
-  font-family: 'Inknut Antiqua';
-  src: url('/fonts/inknut-antiqua.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .fadeIn {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -32,7 +25,7 @@
 }
 
 .circular-btn:hover {
-  background-color: #274494;
+  background-color: #30d680 !important;
 }
 
 

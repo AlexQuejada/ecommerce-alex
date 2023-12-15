@@ -1,25 +1,24 @@
 import NextLink from 'next/link'
-import { ShopLayout } from '../../components/layouts';
-import { Box, Typography } from '@mui/material';
-import { RemoveShoppingCartOutlined } from '@mui/icons-material';
-import Link from 'next/link';
+import { Box, Link, Typography } from '@mui/material'
+import { ShopLayout } from '../../components/layouts'
+import { RemoveShoppingCartOutlined } from '@mui/icons-material'
 
-const emptyPage = () => {
+const EmptyPage = () => {
   return (
-    <ShopLayout title='carrito vacio' pageDescription='aun no realizas tu primera compra'>
-        <Box display='flex' justifyContent='center' alignItems='center' height='calc(100vh - 200px)' sx={{flexDirection: {xs: 'column', sm: 'row'}}}>
-            <RemoveShoppingCartOutlined sx={{fontSize: 100}}/>
-            <Box display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
-                <Typography>Aun no tienes articulos en tu carrito</Typography>
-                <NextLink href='/' passHref legacyBehavior>
-                  <Link color='secondary'>
-                    <h2>regresar</h2>
-                  </Link>
-                </NextLink>
-            </Box>
+    <ShopLayout title='Carrito de compras vacio' pageDescription='Carrito de compras sin productos'>
+      <Box display='flex' justifyContent='center' alignItems='center' height='calc(100vh - 200px)' sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
+        <RemoveShoppingCartOutlined sx={{ fontSize: 100 }} />
+        <Box display='flex' flexDirection='column' alignItems='center'>
+          <Typography>Su carrito de compras está vació</Typography>
+          <NextLink href='/' passHref legacyBehavior>
+            <Link typography='h4' color='secondary'>
+              Regresar
+            </Link>
+          </NextLink>
         </Box>
+      </Box>
     </ShopLayout>
-  );
-};
+  )
+}
 
-export default emptyPage;
+export default EmptyPage

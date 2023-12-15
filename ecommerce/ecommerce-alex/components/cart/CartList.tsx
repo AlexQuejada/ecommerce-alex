@@ -63,4 +63,3 @@ export const CartList: FC<Props> = ({ editable = false }) => {
     </>
   )
 }
-

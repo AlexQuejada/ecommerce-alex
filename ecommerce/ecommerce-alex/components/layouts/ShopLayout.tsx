@@ -1,14 +1,16 @@
 import React, { ReactNode } from 'react';
-import Head from 'next/head';
-import { Navbar } from '../ui';
-interface props{
-  title: string
-  pageDescription: string
-  imagenFullUrl?: string 
-  children: ReactNode;
+import { FC } from 'react'
+import Head from 'next/head'
+import { Navbar, SideMenu } from '../ui';
+
+interface Props {
+  title: string;
+  pageDescription: string;
+  imageFullUrl?: string
+  children?: ReactNode;
 }
 
-export const ShopLayout: React.FC<props> = ({ children,title, pageDescription, imagenFullUrl }) =>{
+export const ShopLayout: FC<Props> = ({ children, title, pageDescription, imageFullUrl }) => {
   return (
     <>
       <Head>
@@ -16,26 +18,29 @@ export const ShopLayout: React.FC<props> = ({ children,title, pageDescription, i
         <meta name='description' content={pageDescription} />
         <meta name='og:title' content={title} />
         <meta name='og:description' content={pageDescription} />
-        
-
         {
-          imagenFullUrl &&(
-            <meta name='og:title' content={imagenFullUrl} />
+          imageFullUrl && (
+            <meta name='og:title' content={imageFullUrl} />
           )
         }
       </Head>
       <nav>
+        {/* TODO: Navbar */}
+        <SideMenu />
         <Navbar />
       </nav>
+      {/* TODO: Sidbar */}
       <main style={{
         margin: '80px auto',
         maxWidth: '1440px',
-        padding: '0px 30px'}
-      }>
+        padding: '0px 30px'
+
+      }}>
         {children}
       </main>
+      {/* TODO: Footer */}
       <footer>
-        
+        {/* TODO: custom Footer */}
       </footer>
     </>
   )

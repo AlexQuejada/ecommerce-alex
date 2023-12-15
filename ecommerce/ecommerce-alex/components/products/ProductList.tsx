@@ -21,4 +21,3 @@ export const ProductList: FC<Props> = ({ products }) => {
     </Grid>
   )
 }
-export default ProductList;

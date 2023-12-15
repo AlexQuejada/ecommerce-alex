@@ -1,3 +1,3 @@
 
 
-export * from './light-themes';
+export * from './light-theme';
